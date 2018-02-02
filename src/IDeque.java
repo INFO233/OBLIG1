@@ -1,7 +1,7 @@
 /**
  * En samling som tillater innsetting og fjerning fra begge
  * sider av samlingen.
- */
+ **/
 public interface IDeque<E> {
     /**
      * Retunerer hvor mange elementer samlingen inneholder.
@@ -74,4 +74,8 @@ public interface IDeque<E> {
      * Fjerner alle elementene fra samlingen.
      */
     void clear();
+
+    E DequeFullException();
+
+    E DequeEmptyException();
 }
